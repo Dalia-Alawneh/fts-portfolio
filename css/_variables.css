@@ -1,0 +1,10 @@
+:root {
+  --primary: #212A54;
+  --dark-bg-color: #212A54;
+  --dark-main-text-color: #E39BFF;
+  --dark-primary-text-color: #FFFFFF;
+  --dark-secondary-text-color: #FFF2F2;
+  --btn-shadow: 0 0 22.5px 12px #05D1FF;
+  --btn-text-color: #212A54;
+  --main-graidient: 90deg, #B302F9, #36DFF1;
+}
