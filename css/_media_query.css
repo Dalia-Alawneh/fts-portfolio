@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .sm-img-display {
+    display: inherit;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .sm-nav__list--positioned-center {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 120px 0;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(var(--primary), 50%);
+  }
+
+}

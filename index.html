@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,43 @@
 
   <meta name="keywords" content="Dalia Alawneh, Frontend Developer, Web Developer, React, JavaScript, Portfolio">
   <meta name="author" content="Dalia Alawneh">
-  <meta name="description" content="I’m a Frontend Developer with expertise in JavaScript, React, and Node.js. Passionate about building scalable, efficient, and user-friendly web applications that deliver seamless digital experiences.">
-  
-  <link rel="icon" type="image/png" href="assets/icons/logo.png">
+  <meta name="description"
+    content="I’m a Frontend Developer with expertise in JavaScript, React, and Node.js. Passionate about building scalable, efficient, and user-friendly web applications that deliver seamless digital experiences.">
+
+  <link rel="icon" type="image/png" href="assets/icons/logo.svg">
 
   <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  
+
+  <nav class="nav">
+    <div class="container nav__container">
+
+      <div class="nav__logo">
+        <a href="/">
+          <img class="nav__image" src="assets/icons/full-logo.svg" width="126" height="42" alt="Dalia logo">
+        </a>
+      </div>
+
+      <button class="btn menu__btn">
+        <img class="menu__img sm-img-display" src="assets/icons/menu.svg" alt="menu icon">
+        <img class="close__img img--none" src="assets/icons/xmark.svg" alt="close menu icon">
+      </button>
+
+      <ul class="list show nav__list--aligned-center sm-nav__list--positioned-center">
+        <li class="nav__item"><a class="link nav__link" href="#about">about</a></li>
+        <li class="nav__item"><a class="link nav__link" href="#work">work</a></li>
+        <li class="nav__item"><a class="link nav__link" href="#projects">projects</a></li>
+        <li class="nav__item"><a class="link nav__link" href="#contact">contact</a></li>
+      </ul>
+
+    </div>
+    
+  </nav>
+
+
+  <script src="js/index.js"></script>
 </body>
+
 </html>
