@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+body{
+  background-color: var(--dark-bg-color);
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 900;
