@@ -14,9 +14,10 @@
   <link rel="icon" type="image/png" href="assets/icons/logo.svg">
 
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/_media_query.css">
 </head>
 
-<body>
+<body class="overflow--hidden">
 
   <nav class="nav">
     <div class="container nav__container">
@@ -28,11 +29,11 @@
       </div>
 
       <button class="btn menu__btn">
-        <img class="menu__img sm-img-display" src="assets/icons/menu.svg" alt="menu icon">
+        <img class="menu__img" src="assets/icons/menu.svg" alt="menu icon">
         <img class="close__img img--none" src="assets/icons/xmark.svg" alt="close menu icon">
       </button>
 
-      <ul class="list show nav__list--aligned-center sm-nav__list--positioned-center">
+      <ul class="list nav__list nav__list--aligned-center sm-nav__list--positioned-center">
         <li class="nav__item"><a class="link nav__link" href="#about">about</a></li>
         <li class="nav__item"><a class="link nav__link" href="#work">work</a></li>
         <li class="nav__item"><a class="link nav__link" href="#projects">projects</a></li>
@@ -40,9 +41,82 @@
       </ul>
 
     </div>
-    
+
   </nav>
 
+  <header class="header">
+    <!-- <div class="eclips--top-right position--absolute">
+      <img src="assets/images/white-ellipse.png" alt="">
+    </div>
+    <div class="eclips--bottom-left position--absolute">
+      <img src="assets/images/gradient-eclips.png" alt="">
+    </div> -->
+    <section class="container header__items--grid">
+      <section class="header__content items--flex--column">
+        <h1>Hi, I'm <span class="text--main">Dalia</span></h1>
+        <p class="header__text text--height">I create web and mobile applications that are user-friendly and functional,
+          Currently, I'm a Front-end intern
+          at <a href="https://www.foothillsolutions.com/" class="link text--main">Foothill Technology Solution.</a></p>
+        <div class="items--flex sm-items--flex gap">
+          <section class="icons items--flex icons--gap">
+            <a href="https://www.linkedin.com/in/dalia-alawneh/" class="icon__link">
+              <img src="assets/icons/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="mailto:alawnehdalia340@gmail.com" class="icon__link">
+              <img src="assets/icons/gmail.svg" alt="gmail">
+            </a>
+            <a href="https://github.com/Dalia-Alawneh" class="icon__link">
+              <img src="assets/icons/github.svg" alt="github">
+            </a>
+          </section>
+          <div class="btn bg--cyn text--primary rounded--full">
+            <a href="https://drive.google.com/drive/u/3/folders/1e07-gIDwVXg-Yl95WFGOXFI_iPFGWH87">Download CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="header__img img__flex--end">
+        <section class="position--relative">
+          <img class="img md-header__img" src="assets/images/dalia-img.png" width="456" height="466" alt="Dalia image">
+          <div class="square square--top position--absolute">
+            <img src="assets/images/top-squares.svg" alt="">
+          </div>
+          <div class="square square--right position--absolute">
+            <img src="assets/images/right-squares.svg" alt="">
+          </div>
+          <div class="square square--bottom position--absolute">
+            <img src="assets/images/bottom-squares.svg" alt="">
+          </div>
+          <div class="badge items--flex badge__creative badge--gap position--absolute rounded--full">
+            <img src="assets/icons/creative.svg" alt="creative">
+            <span class="badge__text">creative</span>
+          </div>
+          <div class="badge items--flex badge__code badge--gap position--absolute rounded--full">
+            <img src="assets/icons/code.svg" alt="code lover">
+            <span class="badge__text">code lover</span>
+          </div>
+          <div class="badge items--flex badge__ux badge--gap position--absolute rounded--full">
+            <img src="assets/icons/ux.svg" alt="ux enthusiast">
+            <span class="badge__text">ux enthusiast</span>
+          </div>
+          <div class="badge items--flex badge__vscode badge--gap position--absolute rounded--full">
+            <img src="assets/icons/vscode.svg" alt="Tech-Savvy">
+            <span class="badge__text">Tech-Savvy</span>
+          </div>
+          <div class="badge items--flex badge__details badge--gap position--absolute rounded--full">
+            <img src="assets/icons/details.svg" alt="Detail-Oriented">
+            <span class="badge__text">Detail-Oriented</span>
+          </div>
+        </section>
+        
+
+
+      </section>
+    </section>
+  </header>
+
+
+  
 
   <script src="js/index.js"></script>
 </body>
