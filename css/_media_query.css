@@ -41,7 +41,11 @@
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-  }
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
 
   .sm-nav__list--positioned-center {
     position: absolute;
@@ -53,7 +57,7 @@
     padding: 60px;
     align-items: center;
     backdrop-filter: blur(5px);
-    background-color: #212a5474;
+    background-color: #212a54;
     z-index: 999;
     gap: 3.25rem;
   }
