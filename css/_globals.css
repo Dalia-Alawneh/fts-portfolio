@@ -54,3 +54,21 @@ h2::after {
   -ms-border-radius: 9999px;
   -o-border-radius: 9999px;
 }
+
+ul{
+  list-style: none;
+}
+
+h3{
+  font-size: 24px;
+  color: var(--dark-white-text-color);
+  font-weight: 600;
+}
+
+h4{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 245, 245, 59%);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
