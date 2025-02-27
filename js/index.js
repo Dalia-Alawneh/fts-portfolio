@@ -65,9 +65,9 @@ function checkBoundary() {
   let inner = innerContainer.getBoundingClientRect();
 
 
-  if (parseInt(innerContainer.style.left) > 0) {
-    innerContainer.style.left = "0px";
-  }
+  // if (parseInt(innerContainer.style.left) > 0) {
+  //   innerContainer.style.left = "0px";
+  // }
 
   // if (inner.right < outer.right) {
   //   innerContainer.style.left = `${inner.width - outer.width}px`;
