@@ -1,8 +1,69 @@
+@media (min-width: 1650px) {
+  .project__card {
+    position: relative;
+    z-index: 5;
+    width: 120%;
+    min-width: 855px;
+  }
+
+  .project__image {
+    top: 90px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .project__image {
+    width: 50%;
+  }
+
+  .project__card {
+    position: relative;
+    z-index: 5;
+    width: 50%;
+    min-width: 500px;
+  }
+
+  .project__description {
+    width: 50%;
+  }
+}
+
 @media (max-width: 1200px) {
   .inner-container {
     grid-auto-columns: calc((100% / 7));
   }
+
+  .project {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .project__image {
+    width: 100%;
+    order: 2;
+  }
+
+  .project__description {
+    width: 100%;
+    order: 1;
+  }
+
+  .project__description{
+    align-items: flex-start;
+  }
+  .project__card {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+  }
+  .project__image.smg::after {
+    top: 0;
+    left: -20%;
+    width: 100%;
+    height: 100%;
+  }
 }
+
 
 @media (max-width: 1040px) {
   .experience__timeline {
