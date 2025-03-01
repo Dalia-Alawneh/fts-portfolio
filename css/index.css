@@ -896,3 +896,12 @@
     -o-transform: scale(1.2);
 }
 }
+
+
+/* FOOTER */
+.footer{
+  padding-block: 4rem;
+}
+.footer p{
+  font-size: 18px;
+}
