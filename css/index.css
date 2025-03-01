@@ -172,7 +172,6 @@
 
 .section--padding {
   padding: 10rem 0;
-  margin: 5rem 0;
 }
 
 .list--gap {
@@ -351,7 +350,7 @@
   z-index: 0;
 }
 
-.eclips--bottom-left{
+.eclips--bottom-left {
   bottom: -50%;
   left: -20%;
   z-index: 0;
@@ -372,6 +371,14 @@
   font-size: 1.2rem;
   font-weight: 400;
   margin: auto;
+}
+
+.card {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .card::before {
@@ -399,7 +406,15 @@
 }
 
 .card:hover::before {
-  opacity: 0.25;
+  opacity: 0.45;
+}
+
+.card:hover {
+  transform: rotate3d(0, 1, 0.2, 15deg);
+  -webkit-transform: rotate3d(0, 1, 0.2, 15deg);
+  -moz-transform: rotate3d(0, 1, 0.2, 15deg);
+  -ms-transform: rotate3d(0, 1, 0.2, 15deg);
+  -o-transform: rotate3d(0, 1, 0.2, 15deg);
 }
 
 /* EXPERIENCE */
@@ -896,14 +911,15 @@
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-}
+  }
 }
 
 
 /* FOOTER */
-.footer{
+.footer {
   padding-block: 4rem;
 }
-.footer p{
+
+.footer p {
   font-size: 18px;
 }
