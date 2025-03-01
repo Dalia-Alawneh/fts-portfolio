@@ -195,6 +195,24 @@
   -o-border-radius: 8px;
 }
 
+.toast{
+  position: fixed;
+  right: -100%;
+  top: 130px;
+  z-index: 9999999999999;
+  background-color: #525d8f;
+  transition: right 0.5s ;
+  padding: 20px 20px;
+  color: var(--dark-secondary-text-color);
+  min-width: 350px;
+  font-size: 16px;
+  border-top: 5px solid var(--dark-main-text-color);
+  box-shadow: var(--container-shadow);
+  -webkit-transition: right 0.5s ;
+  -moz-transition: right 0.5s ;
+  -ms-transition: right 0.5s ;
+  -o-transition: right 0.5s ;
+}
 /* Nav */
 .nav {
   position: fixed;
@@ -808,7 +826,7 @@
   margin: auto;
   border-radius: 25px;
   background-color: rgba(var(--card-bg), 10%);
-  box-shadow: 0px 0px 30px rgba(var(--card-bg), 72%);
+  box-shadow: var(--container-shadow);
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;

@@ -1,7 +1,7 @@
 :root {
   --primary: #212A54;
   --dark-bg-color: #212A54;
-  --secondary: rgb(255,242,242, 65%);
+  --secondary: rgb(255, 242, 242, 65%);
   --dark-main-text-color: #E39BFF;
   --dark-white-text-color: #FFFFFF;
   --dark-secondary-text-color: #FFF2F2;
@@ -12,6 +12,7 @@
   --text-shadow: 0px 5px 20px #f0f0f0;
   --btn-bg: #88E9FF;
   --card-bg: 112, 115, 165;
-  --card-shadow: 0 0 17.5px  #E9B0FF;
+  --card-shadow: 0 0 17.5px #E9B0FF;
   --input-bg: #525d8f9c;
+  --container-shadow: 0px 0px 30px rgba(var(--card-bg), 72%);
 }
