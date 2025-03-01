@@ -3,15 +3,7 @@ const close__btn = document.querySelector('.close__img');
 const menu = document.querySelector('.nav__list');
 const nav = document.querySelector('.nav')
 const list = document.querySelector('.sm-nav__list--positioned-center')
-
-const carousel = document.querySelector('.carousel')
 const contact = document.querySelector('.contact')
-let innerContainer = document.querySelector(".inner-container");
-
-let pressed = false;
-let startX;
-let x;
-
 
 menu__btn.addEventListener('click', () => {
   menu.classList.add('show')
@@ -36,8 +28,6 @@ window.addEventListener("scroll", function () {
     nav.classList.remove("scrolled");
   }
 });
-
-
 
 function createStars() {
   const starCount = 100;

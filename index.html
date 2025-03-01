@@ -46,7 +46,7 @@
 
   <header class="header">
     <div class="eclips--bottom-left position--absolute">
-      <img src="assets/images/gradient-eclips.png" alt="gradient-eclips">
+      <img src="assets/images/ui/gradient-eclips.png" alt="gradient-eclips">
     </div>
     <section class="container header__items--grid position--relative">
       <div class="header__content items--flex--column">
@@ -66,23 +66,24 @@
               <img src="assets/icons/github.svg" alt="github">
             </a>
           </section>
-          <div class="btn bg--cyn text--primary rounded--full">
-            <a href="https://drive.google.com/drive/u/3/folders/1e07-gIDwVXg-Yl95WFGOXFI_iPFGWH87">Download CV</a>
+          <div class="btn bg--cyn rounded--full">
+            <a class="text--primary"
+              href="https://drive.google.com/drive/u/3/folders/1e07-gIDwVXg-Yl95WFGOXFI_iPFGWH87">Download CV</a>
           </div>
         </div>
       </div>
 
       <div class="header__img img__flex--end">
         <div class="position--relative">
-          <img class="img md-header__img" src="assets/images/dalia-img.png" width="456" height="466" alt="Dalia image">
+          <img class="img md-header__img" src="assets/images/header/dalia-img.png" width="456" height="466" alt="Dalia image">
           <div class="square square--top position--absolute">
-            <img src="assets/images/top-squares.svg" alt="squares">
+            <img src="assets/images/ui/top-squares.svg" alt="squares">
           </div>
           <div class="square square--right position--absolute">
-            <img src="assets/images/right-squares.svg" alt="squares">
+            <img src="assets/images/ui/right-squares.svg" alt="squares">
           </div>
           <div class="square square--bottom position--absolute">
-            <img src="assets/images/bottom-squares.svg" alt="squares">
+            <img src="assets/images/ui/bottom-squares.svg" alt="squares">
           </div>
           <div class="badge items--flex badge__creative badge--gap position--absolute rounded--full">
             <img src="assets/icons/creative.svg" alt="creative badge">
@@ -150,15 +151,15 @@
 
     <section id="work" class="experience section--padding position--relative">
       <div class="eclips">
-        <img src="assets/images/ellipseForWork.png" alt="ellipseForWork">
+        <img src="assets/images/ui/ellipseForWork.png" alt="ellipseForWork">
       </div>
 
       <div class="container items--flex--column items--center position--relative">
         <div class="square">
-          <img src="assets/images/exp-square.png">
+          <img src="assets/images/ui/exp-square.png" alt="square image">
         </div>
         <div class="circles">
-          <img src="assets/images/exp-circles.png">
+          <img src="assets/images/ui/exp-circles.png" alt="circles image">
         </div>
         <h2>Work Experience</h2>
 
@@ -282,7 +283,7 @@
     </section>
 
     <section class="skills position--relative">
-      <div class="container carousel" role="carousel">
+      <div class="container carousel"  role="region" aria-label="Skills Carousel">
         <div class="inner-container">
           <div class="item">
             <img src="assets/images/skills/html5.png" alt="html5">
@@ -348,7 +349,7 @@
                   <h4>POS System</h4>
                 </div>
                 <a class="project__link position--relative" target="_blank"
-                  href="https://github.com/Dalia-Alawneh/restaurant-app"><img src="assets/images/link-ico.png"
+                  href="https://github.com/Dalia-Alawneh/restaurant-app"><img src="assets/images/ui/link-ico.png"
                     alt="restaurant-app link"></a>
               </div>
               <div class="project__card rounded--8 card--blur">
@@ -377,10 +378,10 @@
                     <img class="tech__image" src="assets/images/skills/redux.png" alt="redux toolkit">
                   </li>
                   <li>
-                    <img class="tech__image" src="assets/images/headlessui.svg" alt="headlessui">
+                    <img class="tech__image" src="assets/images/techs/headlessui.svg" alt="headlessui">
                   </li>
                   <li>
-                    <img class="tech__image" src="assets/images/chartjs.svg" alt="chartjs">
+                    <img class="tech__image" src="assets/images/techs/chartjs.svg" alt="chartjs">
                   </li>
                 </ul>
               </div>
@@ -400,7 +401,8 @@
                   <h4>E-commerce</h4>
                 </div>
                 <a class="project__link position--relative" target="_blank"
-                  href="https://github.com/Dalia-Alawneh/bag-shop"><img src="assets/images/link-ico.png" alt="bags shop link"></a>
+                  href="https://github.com/Dalia-Alawneh/bag-shop"><img src="assets/images/link-ico.png"
+                    alt="bags shop link"></a>
               </div>
               <div class="project__card  rounded--8 card--blur">
                 <p>E-commerce application built using JSON server</p>
@@ -560,7 +562,7 @@
             </div>
           </form>
 
-          <iframe
+          <iframe title="Map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26943.28582397046!2d35.36856495!3d32.4215493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2s!4v1740783792347!5m2!1sar!2s"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -572,15 +574,15 @@
   <footer class="footer items--flex--column items--center">
     <p>Made with 🤍 by <span class="text--main">Dalia Alawneh</span></p>
     <p class="copywrite">&copy; <span id="year"></span> All rights reserved.</p>
-</footer>
+  </footer>
 
 
   <script src="js/index.js"></script>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+  <script src="js/toast.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
   <script src="js/carousel.js"></script>
   <script src="js/emailjs.js"></script>
-</body> 
+</body>
 
 </html>

@@ -1,3 +1,9 @@
+const carousel = document.querySelector('.carousel')
+let innerContainer = document.querySelector(".inner-container");
+
+let pressed = false;
+let startX;
+let x;
 
 carousel.addEventListener('mousedown', (e) => {
   pressed = true;

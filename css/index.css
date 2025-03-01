@@ -273,7 +273,7 @@
 .header {
   overflow: hidden;
   height: 100vh;
-  background-image: url(../assets/images/header-bg.png);
+  background-image: url(../assets/images/header/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -388,7 +388,7 @@
 }
 /* ABOUT */
 .about {
-  background-image: url(../assets/images/about-cover.png);
+  background-image: url(../assets/images/about/about-cover.png);
 }
 
 .about__container {
