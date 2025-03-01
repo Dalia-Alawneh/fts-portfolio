@@ -213,6 +213,27 @@
   -ms-transition: right 0.5s ;
   -o-transition: right 0.5s ;
 }
+
+.glow {
+  position: fixed;
+  z-index: 999999999;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: radial-gradient(circle, var(--glow) 10%, rgba(255, 255, 255, 0) 80%);
+  box-shadow: 0 0 20px 5px var(--glow), 0 0 40px 10px var(--glow), 0 0 60px 15px var(--glow);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
+  -webkit-filter: blur(100px);
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+}
+
+
 /* Nav */
 .nav {
   position: fixed;
@@ -591,20 +612,6 @@
   margin-left: 7rem;
 }
 
-/* .timeline__card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 25px;
-  padding: 6px;
-  background: linear-gradient(to right, #9d6cfe, #7073a500);
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-} */
 
 .timeline__list--gap {
   gap: 12px;
