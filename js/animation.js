@@ -7,6 +7,7 @@ const projectsSection = document.getElementById('projects')
 const cards = document.querySelectorAll('.card')
 const timelineCards = document.querySelectorAll('.timeline__card')
 const projects = document.querySelectorAll('.project')
+const toTopbtn = document.querySelector('.to-top')
 
 window.addEventListener('load', () => {
   headerImg.classList.add('show');
@@ -78,7 +79,6 @@ window.addEventListener('scroll', (e) => {
       }, (index + 1) * 500)
     })
   })
-  
 })
 
 const animateForSection = (section, animationFunc) => {
@@ -89,3 +89,19 @@ const animateForSection = (section, animationFunc) => {
     animationFunc()
   }
 }
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 200) {
+    console.log(window.scrollY);
+    toTopbtn.style.opacity = 1;
+  } else {
+    toTopbtn.style.opacity = 0;
+  }
+});
+
+toTopbtn.addEventListener('click', ()=>{
+  window.scroll({
+    top:0,
+    behavior: 'smooth'
+  })
+})
