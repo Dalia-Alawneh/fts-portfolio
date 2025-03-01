@@ -246,6 +246,7 @@
 
 /* HEADER */
 .header {
+  overflow: hidden;
   height: 100vh;
   background-image: url(../assets/images/header-bg.png);
   background-size: cover;
@@ -339,12 +340,6 @@
   bottom: -70px;
 }
 
-.eclips--top-right {
-  top: -80px;
-  right: -500px;
-  z-index: -2;
-}
-
 .img {
   position: relative;
   z-index: 4;
@@ -354,6 +349,13 @@
   position: absolute;
   bottom: -500px;
   z-index: 0;
+}
+
+.eclips--bottom-left{
+  bottom: -50%;
+  left: -20%;
+  z-index: 0;
+  filter: blur(22px);
 }
 
 /* ABOUT */
