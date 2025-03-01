@@ -1,10 +1,12 @@
 :root {
   --primary: #212A54;
   --dark-bg-color: #212A54;
+  --secondary: rgb(255,242,242, 65%);
   --dark-main-text-color: #E39BFF;
   --dark-white-text-color: #FFFFFF;
   --dark-secondary-text-color: #FFF2F2;
   --btn-shadow: 0 0 22.5px 12px #05D1FF;
+  --btn-small-shadow: 0 0 14px 2px #05D1FF;
   --btn-text-color: #212A54;
   --main-gradient: linear-gradient(90deg, #B302F9, #36DFF1);
   --text-shadow: 0px 5px 20px #f0f0f0;

@@ -48,7 +48,7 @@
     <div class="eclips--bottom-left position--absolute">
       <img src="assets/images/gradient-eclips.png" alt="">
     </div>
-    <section class="container header__items--grid">
+    <section class="container header__items--grid position--relative">
       <div class="header__content items--flex--column">
         <h1>Hi, I'm <span class="text--main">Dalia</span></h1>
         <p class="header__text text--height">I create web and mobile applications that are user-friendly and functional,
@@ -552,7 +552,7 @@
               <textarea class="input rounded--8" required name="message" id="message"></textarea>
             </div>
             <div class="items--flex items--center">
-              <button type="submit" class="btn form__btn text--primary rounded--full">
+              <button type="submit" id="form__btn" class="btn form__btn text--primary rounded--full">
                 <span class="text__top">Send Message</span></button>
             </div>
           </form>
@@ -570,7 +570,13 @@
     <p>Made with 🤍 by <span class="text--main">Dalia Alawneh</span></p>
     <p class="copywrite">&copy; <span id="year"></span> All rights reserved.</p>
 </footer>
+
+
   <script src="js/index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <script src="js/emailjs.js"></script>
 </body>
 
 </html>

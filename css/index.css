@@ -48,9 +48,17 @@
 
 .bg--cyn {
   background-color: var(--btn-bg);
-  box-shadow: var(--btn-shadow);
+  box-shadow: var(--btn-small-shadow);
+  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
 }
 
+.bg--cyn:hover{
+  box-shadow: var(--btn-shadow);
+}
 .text--primary {
   color: var(--primary);
 }
@@ -357,6 +365,9 @@
   filter: blur(22px);
 }
 
+.header__items--grid.position--relative{
+  z-index: 1;
+}
 /* ABOUT */
 .about {
   background-image: url(../assets/images/about-cover.png);
