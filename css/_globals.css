@@ -55,20 +55,54 @@ h2::after {
   -o-border-radius: 9999px;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-h3{
+h3 {
   font-size: 24px;
   color: var(--dark-white-text-color);
   font-weight: 600;
 }
 
-h4{
+h4 {
   font-size: 18px;
   font-weight: 500;
   color: rgba(255, 245, 245, 59%);
   margin-top: 10px;
   margin-bottom: 16px;
+}
+
+label {
+  font-size: 15px;
+  color: var(--dark-white-text-color);
+}
+
+form {
+  padding: 30px;
+}
+
+input, textarea {
+  min-height: 35px;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+  color: var(--dark-white-text-color);
+  transition: box-shadow .5s;
+  background-color: var(--input-bg);
+  -webkit-transition: box-shadow .5s;
+  -moz-transition: box-shadow .5s;
+  -ms-transition: box-shadow .5s;
+  -o-transition: box-shadow .5s;
+} 
+
+input:focus, textarea:focus {
+  box-shadow: 0px 0px 9px var(--input-bg);
+  border: none;
+  outline: none;
+}
+
+textarea{
+  padding-top: 10px;
+  min-height: 120px;
 }
