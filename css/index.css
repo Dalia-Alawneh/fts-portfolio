@@ -881,7 +881,6 @@
   0% {
     opacity: 0;
     transform: scale(0.8);
-    transform: translate(0, 0);
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
@@ -890,11 +889,10 @@
 
   100% {
     opacity: 1;
-    transform: var(--translate-x, 0) var(--translate-y, 0);
     transform: scale(1.2);
-    -webkit-transform: var(--translate-x, 0) var(--translate-y, 0);
-    -moz-transform: var(--translate-x, 0) var(--translate-y, 0);
-    -ms-transform: var(--translate-x, 0) var(--translate-y, 0);
-    -o-transform: var(--translate-x, 0) var(--translate-y, 0);
-  }
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 }
