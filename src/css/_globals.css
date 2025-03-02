@@ -82,7 +82,8 @@ form {
   padding: 30px;
 }
 
-input, textarea {
+input,
+textarea {
   min-height: 35px;
   width: 100%;
   padding-left: 10px;
@@ -94,15 +95,40 @@ input, textarea {
   -moz-transition: box-shadow .5s;
   -ms-transition: box-shadow .5s;
   -o-transition: box-shadow .5s;
-} 
+}
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   box-shadow: 0px 0px 9px var(--input-bg);
   border: none;
   outline: none;
 }
 
-textarea{
+textarea {
   padding-top: 10px;
   min-height: 120px;
+}
+
+::selection{
+  background-color: var(--selected);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-secondary-text-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--scrollbar-bg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-bg-hover);
 }

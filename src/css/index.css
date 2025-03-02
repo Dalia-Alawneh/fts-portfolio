@@ -657,7 +657,7 @@
 
 .timeline__item:nth-of-type(odd)::after {
   right: -45px;
-}
+} 
 
 .timeline__item:nth-of-type(even)::after {
   left: -45px;
