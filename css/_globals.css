@@ -8,8 +8,8 @@
   box-sizing: border-box;
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -30,6 +30,10 @@ h2 {
 
 p {
   font-size: 1.625rem;
-  font-weight: 900;
+  font-weight: 500;
   color: var(--dark-primary-text-color);
+}
+
+a{
+  text-decoration: none;
 }

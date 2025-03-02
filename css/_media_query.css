@@ -1,0 +1,140 @@
+@media (max-width: 968px) {
+  .menu__btn {
+    display: inline;
+  }
+
+  .nav__logo, .menu__btn{
+    position: relative;
+    z-index: 9999;
+  }
+  .list {
+    flex-direction: column;
+  }
+
+  .nav__list {
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0;
+    -webkit-transition: transform 0;
+    -moz-transition: transform 0;
+    -ms-transition: transform 0;
+    -o-transition: transform 0;
+  }
+
+  .nav__list.hide {
+    opacity: 1;
+    visibility: visible;
+    transition: transform 1s;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+
+  .nav__list.show {
+    opacity: 1;
+    visibility: visible;
+    transition: transform 1s;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+  .sm-nav__list--positioned-center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 80px 0;
+    padding: 60px;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: #212a54;
+    z-index: 999;
+    gap: 3.25rem;
+  }
+
+  /* HEADER */
+
+  .header {
+    padding-top: 120px;
+  }
+
+  .header__items--grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .img__flex--end {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+  
+  .badge{
+    padding: 10px 15px;
+  }
+  .badge__text{
+    font-size: 16px;
+  }
+  .badge__vscode, .badge__ux{
+    left: -50px;
+  }
+
+  .badge__details{
+    top: 0;
+  }
+  .sm-items--flex {
+    justify-content: center;
+  }
+}
+
+@media (min-width:789px) and (max-width: 1240px) {
+  .md-header__img {
+    width: 350px;
+    height: 360px;
+  }
+}
+
+@media (max-width:789px) {
+  .md-header__img {
+    width: 350px;
+    height: 360px;
+  }
+
+  .sm-items--flex {
+    flex-direction: column;
+  }
+
+  .header__items--grid {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .badge__vscode, .badge__ux{
+    left: 0px;
+  }
+
+  .badge__vscode{
+    top: 50px;
+  }
+  .badge__details{
+    top: -10px;
+    right: 20px;
+  }
+}
