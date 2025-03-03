@@ -113,11 +113,11 @@ textarea {
   background-color: var(--selected);
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--dark-secondary-text-color);
+  background: var(--primary);
 }
 
 ::-webkit-scrollbar-thumb {
