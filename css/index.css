@@ -30,6 +30,14 @@
   color: var(--dark-main-text-color);
 }
 
+.text--white {
+  color: var(--dark-white-text-color);
+}
+
+.text--center {
+  text-align: center;
+}
+
 .btn {
   border: none;
   padding: 12px 20px;
@@ -70,9 +78,19 @@
   gap: 2rem;
 }
 
+.items--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.items--center-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .scrolled {
   backdrop-filter: blur(5px);
-  background-color: #212a54e7;
+  background-color: #212a54;
 }
 
 .text--height {
@@ -102,9 +120,42 @@
   gap: 3rem;
 }
 
-.overflow--hidden {
+.overflowX--hidden {
   overflow-x: hidden;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px;
+  width: 100%;
+}
+
+.card {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: var(--card-shadow);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.card--blur {
+  background-color: rgba(var(--card-bg), 72%);
+  backdrop-filter: blur(5);
+}
+
+.section--cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 /* Nav */
 .nav {
@@ -128,7 +179,7 @@
 }
 
 .nav__link {
-  color: var(--dark-primary-text-color);
+  color: var(--dark-white-text-color);
   font-size: 18px;
   text-transform: capitalize;
   text-decoration: none;
@@ -263,7 +314,58 @@
   z-index: -2;
 }
 
-.img{
+.img {
   position: relative;
   z-index: 4;
+}
+
+.eclips {
+  position: absolute;
+  bottom: -500px;
+  z-index: 0;
+}
+
+/* ABOUT */
+.about {
+  padding: 125px 0;
+  background-image: url(../assets/images/about-cover.png);
+}
+
+.about__container {
+  width: 80%;
+  margin: auto;
+}
+
+.about__text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: auto;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  width: 70%;
+  height: 20px;
+  z-index: 0;
+  background-color: var(--dark-secondary-text-color);
+  opacity: 0;
+  transition: opacity 500ms;
+  filter: blur(30px);
+  border-radius: 50%;
+  z-index: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-filter: blur(30px);
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+}
+
+.card:hover::before {
+  opacity: 0.25;
 }
