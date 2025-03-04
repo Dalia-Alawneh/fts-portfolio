@@ -15,11 +15,11 @@ window.addEventListener('load', () => {
   headerContent.classList.add('show')
   headerContent.classList.remove('fade--out');
 
-  badges.forEach(badge => {
+  badges.forEach((badge,index) => {
     setTimeout(() => {
       badge.style.transform = 'translateX(0)';
       badge.style.opacity = 1;
-    }, index * 500)
+    }, (index + 1) * 500)
   })
 
   animateForSection(aboutSection, () => {
