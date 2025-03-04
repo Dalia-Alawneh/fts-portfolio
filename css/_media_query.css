@@ -1,3 +1,46 @@
+@media (max-width: 1024px) {
+  .experience__timeline {
+    margin-left: 20px;
+  }
+  .experience__timeline::after {
+    left: 0;
+  }
+
+  .timeline__item{
+    margin-bottom: 4rem;
+    width: 100%;
+    padding-left: 5rem;
+
+  }
+  .timeline__item:nth-of-type(odd)::after {
+    left: -45px;
+  }
+
+  .timeline__item:nth-of-type(even) {
+    left: 0;
+  }
+
+  .timeline__card, .timeline__item:nth-of-type(even) .timeline__card, .timeline__item:nth-of-type(odd) .timeline__card {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .work__duration {
+    bottom: -35px;
+    left: 7rem;
+    top: inherit;
+  }
+
+  .timeline__item:nth-of-type(even) .work__duration {
+    left: 7rem;
+    right: inherit;
+  }
+  .experience .eclips{
+    width: 300px;
+  }
+}
+
 @media (max-width: 968px) {
   .menu__btn {
     display: inline;
@@ -108,7 +151,7 @@
     justify-content: center;
   }
 
-  .header{
+  .header {
     height: auto;
     padding-bottom: 3rem;
     overflow-x: hidden;
@@ -160,5 +203,26 @@
   .badge__details {
     top: -10px;
     right: 20px;
+  }
+
+
+  .timeline__item:nth-of-type(odd)::after, .timeline__item:nth-of-type(even)::after {
+    left: -30px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .timeline__card{
+    padding: 20px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .work__duration {
+    font-size: 15px;
   }
 }
