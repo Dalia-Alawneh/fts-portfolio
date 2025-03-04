@@ -5,6 +5,7 @@ const nav = document.querySelector('.nav')
 const list = document.querySelector('.sm-nav__list--positioned-center')
 
 const carousel = document.querySelector('.carousel')
+const contact = document.querySelector('.contact')
 let innerContainer = document.querySelector(".inner-container");
 
 let pressed = false;
@@ -73,3 +74,29 @@ function checkBoundary() {
   //   innerContainer.style.left = `${inner.width - outer.width}px`;
   // }
 }
+
+function createStars() {
+  const starCount = 100;
+
+  for (let i = 0; i < starCount; i++) {
+      let star = document.createElement("div");
+      star.classList.add("star");
+
+      let x = Math.random() * window.innerWidth;
+      let y = Math.random() * window.innerHeight;
+
+      let size = Math.random() * 3 + 1;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+
+      let delay = Math.random() * 2;
+      star.style.animationDelay = `${delay}s`;
+
+      star.style.left = `${x}px`;
+      star.style.top = `${y}px`;
+
+      contact.appendChild(star);
+  }
+}
+
+createStars();
