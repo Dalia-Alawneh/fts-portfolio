@@ -28,7 +28,7 @@ To run the project locally, follow these steps:
 git clone https://github.com/Dalia-Alawneh/fts-portfolio.git
 
 # Navigate to the project directory
-cd portfolio
+cd fts-portfolio
 
 # Open index.html in your browser
 ```
