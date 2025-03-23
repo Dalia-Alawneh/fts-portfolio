@@ -109,7 +109,7 @@
   align-items: flex-end;
 }
 
-.items--center-between {
+.align--center-between {
   justify-content: space-between;
   align-items: center;
 }
