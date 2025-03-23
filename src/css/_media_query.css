@@ -228,9 +228,11 @@
   .header {
     height: auto;
     padding-bottom: 3rem;
-    overflow-x: hidden;
   }
 
+  .eclips--bottom-left{
+    display: none;
+  }
   /* ABOUT */
   .about__container {
     width: 100%;

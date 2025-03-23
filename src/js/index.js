@@ -5,59 +5,36 @@ const nav = document.querySelector('.nav')
 const list = document.querySelector('.sm-nav__list--positioned-center')
 const contact = document.querySelector('.contact')
 
-menu__btn.addEventListener('click', () => {
-  menu.classList.add('show')
-  menu.classList.remove('hide')
+menu__btn.addEventListener('click', () => openMenu(menu, menu__btn, close__btn))
 
-  menu__btn.style.display = "none";
-  close__btn.classList.remove('img--none')
-})
+close__btn.addEventListener('click', () => closeMenu(menu, menu__btn, close__btn))
 
-close__btn.addEventListener('click', () => {
-  menu.classList.remove('show')
-  menu.classList.add('hide')
+window.addEventListener("scroll", () => handleSectionBgOnScroll(nav));
 
-  menu__btn.style.display = "inline";
-  close__btn.classList.add('img--none')
-})
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 10) {
-    nav.classList.add("scrolled");
-  } else {
-    nav.classList.remove("scrolled");
-  }
-});
-
-
-document.addEventListener("mousemove", (e) => {
-  const glow = document.querySelector(".glow");
-  glow.style.left = `${e.clientX}px`;
-  glow.style.top = `${e.clientY}px`;
-});
+document.addEventListener("mousemove", followMouseGlow);
 
 
 function createStars() {
   const starCount = 100;
 
   for (let i = 0; i < starCount; i++) {
-      let star = document.createElement("div");
-      star.classList.add("star");
+    let star = document.createElement("div");
+    star.classList.add("star");
 
-      let x = Math.random() * window.innerWidth;
-      let y = Math.random() * window.innerHeight;
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
 
-      let size = Math.random() * 3 + 1;
-      star.style.width = `${size}px`;
-      star.style.height = `${size}px`;
+    let size = Math.random() * 3 + 1;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
 
-      let delay = Math.random() * 2;
-      star.style.animationDelay = `${delay}s`;
+    let delay = Math.random() * 2;
+    star.style.animationDelay = `${delay}s`;
 
-      star.style.left = `${x}px`;
-      star.style.top = `${y}px`;
+    star.style.left = `${x}px`;
+    star.style.top = `${y}px`;
 
-      contact.appendChild(star);
+    contact.appendChild(star);
   }
 }
 
