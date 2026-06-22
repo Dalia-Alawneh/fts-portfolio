@@ -1,0 +1,11 @@
+@import url('./_variables.css');
+@import url('./_globals.css');
+@import url('./animations/_animation.css');
+@import url('./_shared.css');
+@import url('./blocks/header.css');
+@import url('./blocks/about.css');
+@import url('./blocks/experience.css');
+@import url('./blocks/carousel.css');
+@import url('./blocks/projects.css');
+@import url('./blocks/contact.css');
+@import url('./blocks/footer.css');

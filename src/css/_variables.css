@@ -1,15 +1,22 @@
 :root {
   --primary: #212A54;
   --dark-bg-color: #212A54;
+  --glow: #05D1FF;
+  --secondary: rgb(255, 242, 242, 65%);
   --dark-main-text-color: #E39BFF;
   --dark-white-text-color: #FFFFFF;
   --dark-secondary-text-color: #FFF2F2;
   --btn-shadow: 0 0 22.5px 12px #05D1FF;
+  --btn-small-shadow: 0 0 14px 2px #05D1FF;
   --btn-text-color: #212A54;
   --main-gradient: linear-gradient(90deg, #B302F9, #36DFF1);
   --text-shadow: 0px 5px 20px #f0f0f0;
   --btn-bg: #88E9FF;
   --card-bg: 112, 115, 165;
-  --card-shadow: 0 0 17.5px  #E9B0FF;
+  --card-shadow: 0 0 17.5px #E9B0FF;
   --input-bg: #525d8f9c;
+  --container-shadow: 0px 0px 30px rgba(var(--card-bg), 72%);
+  --scrollbar-bg: #a154ff;
+  --scrollbar-bg-hover: #bb83ff;
+  --selected: #a25bf9;
 }

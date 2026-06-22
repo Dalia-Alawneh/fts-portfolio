@@ -1,0 +1,66 @@
+.about {
+  background-image: url(../../../assets/images/about/about-cover.png);
+}
+
+.about__container {
+  width: 80%;
+  margin: auto;
+}
+
+.about__text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: auto;
+}
+
+.card {
+  transition: all 0.5s;
+  opacity: 0;
+  position: relative;
+  left: -100px;
+  transform: translate(-50%, 0) rotate3d(0);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transform: translate(-50%, 0) rotate3d(0);
+  -moz-transform: translate(-50%, 0) rotate3d(0);
+  -ms-transform: translate(-50%, 0) rotate3d(0);
+  -o-transform: translate(-50%, 0) rotate3d(0);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 70%;
+  height: 20px;
+  z-index: 0;
+  background-color: var(--dark-secondary-text-color);
+  opacity: 0;
+  transition: opacity 500ms;
+  filter: blur(30px);
+  border-radius: 50%;
+  z-index: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-filter: blur(30px);
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+}
+
+.card:hover::before {
+  opacity: 0.45;
+}
+
+.card:hover {
+  transform: translate(0) rotate3d(0, 1, 0.2, 15deg);
+  -webkit-transform: translate(0) rotate3d(0, 1, 0.2, 15deg);
+  -moz-transform: translate(0) rotate3d(0, 1, 0.2, 15deg);
+  -ms-transform: translate(0) rotate3d(0, 1, 0.2, 15deg);
+  -o-transform: translate(0) rotate3d(0, 1, 0.2, 15deg);
+}

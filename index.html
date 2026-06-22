@@ -5,54 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dalia Alawneh</title>
-
   <meta name="keywords" content="Dalia Alawneh, Frontend Developer, Web Developer, React, JavaScript, Portfolio">
   <meta name="author" content="Dalia Alawneh">
   <meta name="description"
     content="I’m a Frontend Developer with expertise in JavaScript, React, and Node.js. Passionate about building scalable, efficient, and user-friendly web applications that deliver seamless digital experiences.">
-
   <link rel="icon" type="image/png" href="assets/icons/logo.svg">
-
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/_media_query.css">
+  <link rel="stylesheet" href="src/css/index.css">
+  <link rel="stylesheet" href="src/css/_media_query.css">
 </head>
 
-<body class="overflowX--hidden">
-
+<body>
   <nav class="nav">
     <div class="container nav__container">
-
       <div class="nav__logo">
         <a href="/">
           <img class="nav__image" src="assets/icons/full-logo.svg" width="126" height="42" alt="Dalia logo">
         </a>
       </div>
-
       <button class="btn menu__btn">
         <img class="menu__img" src="assets/icons/menu.svg" alt="menu icon">
         <img class="close__img img--none" src="assets/icons/xmark.svg" alt="close menu icon">
       </button>
-
       <ul class="list nav__list nav__list--aligned-center sm-nav__list--positioned-center">
         <li class="nav__item"><a class="link nav__link" href="#about">about</a></li>
         <li class="nav__item"><a class="link nav__link" href="#work">work</a></li>
         <li class="nav__item"><a class="link nav__link" href="#projects">projects</a></li>
         <li class="nav__item"><a class="link nav__link" href="#contact">contact</a></li>
       </ul>
-
     </div>
-
   </nav>
-
-  <header class="header">
-    <!-- <div class="eclips--top-right position--absolute">
-      <img src="assets/images/white-ellipse.png" alt="">
-    </div>
+  <header class="header position--relative">
     <div class="eclips--bottom-left position--absolute">
-      <img src="assets/images/gradient-eclips.png" alt="">
-    </div> -->
-    <section class="container header__items--grid">
-      <div class="header__content items--flex--column">
+      <img src="assets/images/ui/gradient-eclips.png" alt="gradient-eclips">
+    </div>
+    <section class="container header__items--grid position--relative">
+      <div class="header__content flex--column fade--out">
         <h1>Hi, I'm <span class="text--main">Dalia</span></h1>
         <p class="header__text text--height">I create web and mobile applications that are user-friendly and functional,
           Currently, I'm a Front-end intern
@@ -69,57 +56,62 @@
               <img src="assets/icons/github.svg" alt="github">
             </a>
           </section>
-          <div class="btn bg--cyn text--primary rounded--full">
-            <a href="https://drive.google.com/drive/u/3/folders/1e07-gIDwVXg-Yl95WFGOXFI_iPFGWH87">Download CV</a>
+          <div class="btn bg--cyn rounded--full">
+            <a class="text--primary"
+              href="https://drive.google.com/drive/u/3/folders/1e07-gIDwVXg-Yl95WFGOXFI_iPFGWH87">Download CV</a>
           </div>
         </div>
       </div>
-
       <div class="header__img img__flex--end">
         <div class="position--relative">
-          <img class="img md-header__img" src="assets/images/dalia-img.png" width="456" height="466" alt="Dalia image">
+          <img id="headerImg" class="img fade--out md-header__img" src="assets/images/header/dalia-img.png" width="456"
+            height="466" alt="Dalia image">
           <div class="square square--top position--absolute">
-            <img src="assets/images/top-squares.svg" alt="">
+            <img src="assets/images/ui/top-squares.svg" alt="squares">
           </div>
           <div class="square square--right position--absolute">
-            <img src="assets/images/right-squares.svg" alt="">
+            <img src="assets/images/ui/right-squares.svg" alt="squares">
           </div>
           <div class="square square--bottom position--absolute">
-            <img src="assets/images/bottom-squares.svg" alt="">
+            <img src="assets/images/ui/bottom-squares.svg" alt="squares">
           </div>
           <div class="badge items--flex badge__creative badge--gap position--absolute rounded--full">
-            <img src="assets/icons/creative.svg" alt="creative">
+            <svg width="19" height="38" viewBox="0 0 19 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 0H19V14.915C19 15.6433 18.8417 16.2925 18.525 16.8625C18.2083 17.4325 17.765 17.8917 17.195 18.24L10.45 22.23L11.78 26.6H19L13.11 30.78L15.39 38L9.5 33.535L3.61 38L5.89 30.78L0 26.6H7.22L8.55 22.23L1.805 18.24C1.235 17.8917 0.791667 17.4325 0.475 16.8625C0.158333 16.2925 0 15.6433 0 14.915V0ZM7.6 3.8V17.195L9.5 18.335L11.4 17.195V3.8H7.6Z"
+                fill="#7A41DC" />
+            </svg>
             <span class="badge__text">creative</span>
           </div>
           <div class="badge items--flex badge__code badge--gap position--absolute rounded--full">
-            <img src="assets/icons/code.svg" alt="code lover">
+            <svg width="35" height="29" viewBox="0 0 35 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.5781 0.0878459C21.8736 0.169812 22.1498 0.30871 22.3911 0.496602C22.6324 0.684494 22.834 0.917695 22.9844 1.18288C23.1347 1.44806 23.2309 1.74002 23.2674 2.04207C23.3039 2.34412 23.28 2.65034 23.197 2.94322L16.2994 27.3096C16.1322 27.9009 15.7349 28.4021 15.195 28.703C14.6551 29.0039 14.0167 29.0798 13.4204 28.914C12.824 28.7482 12.3185 28.3543 12.015 27.819C11.7115 27.2837 11.635 26.6507 11.8022 26.0594L18.6998 1.68994C18.7826 1.39712 18.9228 1.12335 19.1124 0.884273C19.302 0.645194 19.5372 0.445489 19.8047 0.296567C20.0721 0.147646 20.3665 0.0524267 20.6711 0.0163487C20.9756 -0.0197292 21.2844 0.00404153 21.5796 0.0863026L21.5781 0.0878459ZM10.588 6.31565C11.0253 6.74975 11.2709 7.33818 11.2709 7.95171C11.2709 8.56523 11.0253 9.15366 10.588 9.58776L5.63777 14.5005L10.5911 19.4118C11.0289 19.8461 11.2748 20.4351 11.2747 21.0492C11.2745 21.6632 11.0284 22.2521 10.5903 22.6862C10.1523 23.1203 9.55826 23.3641 8.93892 23.364C8.31958 23.3638 7.72567 23.1198 7.28784 22.6854L0.682881 16.1366C0.24561 15.7025 0 15.1141 0 14.5005C0 13.887 0.24561 13.2986 0.682881 12.8645L7.28628 6.31565C7.50313 6.10051 7.76061 5.92985 8.044 5.8134C8.32739 5.69696 8.63115 5.63703 8.93791 5.63703C9.24468 5.63703 9.54844 5.69696 9.83183 5.8134C10.1152 5.92985 10.3711 6.10051 10.588 6.31565ZM24.4112 9.58776C24.1818 9.37581 23.9978 9.12021 23.8702 8.83622C23.7426 8.55223 23.674 8.24566 23.6684 7.9348C23.6629 7.62394 23.7206 7.31516 23.838 7.02688C23.9554 6.7386 24.1302 6.47673 24.352 6.25688C24.5737 6.03704 24.8378 5.86373 25.1286 5.74729C25.4193 5.63084 25.7307 5.57366 26.0443 5.57915C26.3578 5.58463 26.667 5.65267 26.9534 5.77921C27.2398 5.90575 27.4976 6.08819 27.7114 6.31565L34.3163 12.863C34.7541 13.2971 35 13.8859 35 14.4998C35 15.1137 34.7541 15.7024 34.3163 16.1366L27.7129 22.6854C27.4961 22.9005 27.2388 23.0711 26.9555 23.1875C26.6722 23.304 26.3685 23.3639 26.0619 23.364C25.7552 23.3641 25.4515 23.3042 25.1682 23.1879C24.8848 23.0717 24.6274 22.9012 24.4105 22.6862C24.1936 22.4713 24.0215 22.2161 23.9041 21.9352C23.7866 21.6543 23.7262 21.3532 23.7261 21.0492C23.726 20.7451 23.7864 20.444 23.9036 20.1631C24.0209 19.8821 24.1929 19.6268 24.4097 19.4118L29.363 14.5005L24.4112 9.58776Z"
+                fill="#05D1FF" />
+            </svg>
             <span class="badge__text">code lover</span>
           </div>
           <div class="badge items--flex badge__ux badge--gap position--absolute rounded--full">
-            <img src="assets/icons/ux.svg" alt="ux enthusiast">
+            <img src="assets/icons/ux.svg" alt="ux enthusiast badge">
             <span class="badge__text">ux enthusiast</span>
           </div>
           <div class="badge items--flex badge__vscode badge--gap position--absolute rounded--full">
-            <img src="assets/icons/vscode.svg" alt="Tech-Savvy">
+            <img src="assets/icons/vscode.svg" alt="Tech-Savvy badge">
             <span class="badge__text">Tech-Savvy</span>
           </div>
           <div class="badge items--flex badge__details badge--gap position--absolute rounded--full">
-            <img src="assets/icons/details.svg" alt="Detail-Oriented">
+            <img src="assets/icons/details.svg" alt="Detail-Oriented badge">
             <span class="badge__text">Detail-Oriented</span>
           </div>
         </div>
-
-
-
       </div>
     </section>
   </header>
-
   <main>
-    <section class="about section--cover section--padding">
+    <section id="about" class="about section--cover section--padding">
       <div class="container">
         <div class="about__container">
-          <div class="items--flex--column items--center gap">
+          <div class="flex--column items--center gap">
             <h2>about</h2>
             <p class="text--height text--center about__text">I'm a Frontend Developer skilled in JavaScript, Dart,
               React, Next.js, Node.js, and Flutter. I build
@@ -127,7 +119,7 @@
               Technology Solutions, gaining real-world experience. Passionate about learning, collaborating, and
               creating
               seamless digital experiences. Let’s build something amazing! 🚀</p>
-            <div class="cards items--center-between gap">
+            <div class="cards align--center-between gap">
               <div class="card card--blur position--relative">
                 <img class="card__icon" src="assets/icons/frontend.svg" alt="frontend">
                 <div class="card__title text--white">Frontend Developer</div>
@@ -149,72 +141,102 @@
         </div>
       </div>
     </section>
-
-
-    <section class="experience section--padding position--relative">
+    <section id="work" class="experience section--padding position--relative">
       <div class="eclips">
-        <img src="assets/images/ellipseForWork.png" alt="ellipseForWork">
+        <img src="assets/images/ui/ellipseForWork.png" alt="ellipseForWork">
       </div>
-
-      <div class="container items--flex--column items--center position--relative">
+      <div class="container flex--column items--center position--relative">
         <div class="square">
-          <img src="assets/images/exp-square.png">
+          <img src="assets/images/ui/exp-square.png" alt="square image">
         </div>
         <div class="circles">
-          <img src="assets/images/exp-circles.png">
+          <img src="assets/images/ui/exp-circles.png" alt="circles image">
         </div>
         <h2>Work Experience</h2>
-
         <div class="experience__timeline position--relative">
           <div class="timeline__item">
             <div class="timeline__card card--blur">
               <h3 class="work__title">Front End Engineer</h3>
               <h4 class="work__sub-title">Double Click</h4>
-              <ul class="items--flex--column timeline__list--gap">
+              <ul class="flex--column timeline__list--gap">
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">React Developement For Jeel Dashboard</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Real-Time Beverage Website</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Unit Testing and Cypress JS</p>
                 </li>
               </ul>
             </div>
             <div class="timeline__duration">
               <div class="items--flex items--center gap-2">
-                <span class="work__duration">Jan 2024 - Jan 2025</span>
+                <span class="work__duration">
+                  <time datetime="2024-01-01">Jan 2024</time> -
+                  <time datetime="2025-01-01">Jan 2025</time>
+                </span>
               </div>
             </div>
           </div>
           <div class="timeline__item">
             <div class="timeline__duration">
               <div class="items--flex items--center gap-2">
-                <span class="work__duration">Oct 2023 - Present</span>
+                <span class="work__duration">
+                  <time datetime="2023-10-01">Oct 2023</time> -
+                  <time datetime="2023-10-01" title="Ongoing">Present</time>
+                </span>
               </div>
             </div>
             <div class="timeline__card card--blur">
               <h3 class="work__title">Front End Freelancer | Trainer</h3>
               <h4 class="work__sub-title">Knowledge Academy</h4>
-              <ul class="items--flex--column timeline__list--gap">
+              <ul class="flex--column timeline__list--gap">
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Advanced React Sessions</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">TailwindCSS Workshop</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Advanced JavaScript Training</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">JavaScript mid-level course</p>
                 </li>
               </ul>
@@ -224,20 +246,31 @@
             <div class="timeline__card card--blur">
               <h3 class="work__title">Front End Developer | Node js Lecturer | Training and Mentor Team Leader</h3>
               <h4 class="work__sub-title">Knowledge Academy</h4>
-              <ul class="items--flex--column timeline__list--gap">
+              <ul class="flex--column timeline__list--gap">
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Developing and maintaining landing web pages</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Front-end training</p>
                 </li>
               </ul>
             </div>
             <div class="timeline__duration">
               <div class="items--flex items--center gap-2">
-                <span class="work__duration">May 2022 - Oct 2023</span>
+                <span class="work__duration">
+                  <time datetime="2022-05-01">May 2022</time> -
+                  <time datetime="2023-10-01">Oct 2023</time>
+                </span>
               </div>
             </div>
           </div>
@@ -245,47 +278,73 @@
             <div class="timeline__card card--blur">
               <h3 class="work__title">Flutter Development Intern</h3>
               <h4 class="work__sub-title">Dimentions Info Tech</h4>
-              <ul class="items--flex--column timeline__list--gap">
+              <ul class="flex--column timeline__list--gap">
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Developing and maintaining mobile applications using Flutter</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Collaborating with teams and work with other developers to create high-quality
                     products</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Implementing projects with students and workshops</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Implementing responsive design and ensuring compatibility with other mobile
                     devices</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Dealing with APIs and implementing consistent design templates</p>
                 </li>
                 <li class="items--flex timeline__list--gap">
-                  <img src="assets/icons/check.svg" alt="check icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13 8L9 12L7 10M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 14.9706 14.9706 19 10 19Z"
+                      stroke="#9C6CFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                   <p class="list__text">Working on real projects and implementing the design for various screens</p>
                 </li>
               </ul>
             </div>
             <div class="timeline__duration">
               <div class="items--flex items--center gap-2">
-                <span class="work__duration">July - October 2022</span>
+                <span class="work__duration">
+                  <time datetime="2022-07-01">Jul</time> -
+                  <time datetime="2022-10-01">Oct 2022</time>
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="skills position--relative">
-      <div class="container carousel">
+      <div class="container carousel" role="region" aria-label="Skills Carousel">
         <div class="inner-container">
           <div class="item">
             <img src="assets/images/skills/html5.png" alt="html5">
@@ -294,78 +353,104 @@
             <img src="assets/images/skills/css.png" alt="css">
           </div>
           <div class="item">
-            <img src="assets/images/skills/js.png" alt="">
+            <img src="assets/images/skills/js.png" alt="javascript">
           </div>
           <div class="item">
-            <img src="assets/images/skills/bootstrap-skill.png" alt="">
+            <img src="assets/images/skills/bootstrap-skill.png" alt="bootstrap">
           </div>
           <div class="item">
-            <img src="assets/images/skills/git.png" alt="">
+            <img src="assets/images/skills/git.png" alt="git">
           </div>
           <div class="item">
-            <img src="assets/images/skills/github.png" alt="">
+            <img src="assets/images/skills/github.png" alt="github">
           </div>
           <div class="item">
-            <img src="assets/images/skills/tailwind.png" alt="">
+            <img src="assets/images/skills/tailwind.png" alt="tailwind">
           </div>
           <div class="item">
-            <img src="assets/images/skills/ts.png" width="88" height="88" alt="">
+            <img src="assets/images/skills/ts.png" width="88" height="88" alt="typescript">
           </div>
           <div class="item">
-            <img src="assets/images/skills/react.png" alt="">
+            <img src="assets/images/skills/react.png" alt="react js">
           </div>
           <div class="item">
-            <img src="assets/images/skills/figma.png" alt="">
+            <img src="assets/images/skills/figma.png" alt="figma">
           </div>
           <div class="item">
-            <img src="assets/images/skills/flutter.png" alt="">
+            <img src="assets/images/skills/flutter.png" alt="flutter">
           </div>
           <div class="item">
-            <img src="assets/images/skills/firebase.png" alt="">
+            <img src="assets/images/skills/firebase.png" alt="firebase">
           </div>
           <div class="item">
-            <img src="assets/images/skills/nodejs.png" alt="">
+            <img src="assets/images/skills/nodejs.png" alt="node js">
           </div>
           <div class="item">
-            <img src="assets/images/skills/npm.png" alt="">
+            <img src="assets/images/skills/npm.png" alt="npm">
           </div>
           <div class="item">
-            <img src="assets/images/skills/next.png" alt="">
+            <img src="assets/images/skills/next.png" alt="next js">
+          </div>
+          <div class="item">
+            <img src="assets/images/skills/dart.png" alt="dart">
           </div>
         </div>
       </div>
     </section>
-
-    <section class="projects section--padding position--relative">
-      <div class="container items--flex--column items--center position--relative">
+    <section id="projects" class="projects section--padding position--relative">
+      <div class="container flex--column items--center position--relative">
         <h2>top projects</h2>
-        <div class="projects__items items--flex--column gap">
+        <div class="projects__items flex--column gap">
           <div class="project items--flex">
-            <div class="project__description items--flex--column items--start">
+            <div class="project__description flex--column items--start">
               <div class="items--flex items--center">
                 <div class="project__heading">
                   <h3>Restaurent App</h3>
                   <h4>POS System</h4>
                 </div>
                 <a class="project__link position--relative" target="_blank"
-                  href="https://github.com/Dalia-Alawneh/restaurant-app"><img src="assets/images/link-ico.png"
-                    alt="link"></a>
+                  href="https://github.com/Dalia-Alawneh/restaurant-app"><img src="assets/images/ui/link-ico.png"
+                    alt="restaurant-app link"></a>
               </div>
               <div class="project__card rounded--8 card--blur">
                 <p>React - TypeScript for admin, client, and cashier</p>
-                <ul class="items--flex--column list--gap">
+                <ul class="flex--column list--gap">
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">POS system for managing customer orders, including menu items, quantities, and
                       special requests.</p>
                   </li>
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
                     <p class="list__text">Dashboard for restaurant staff to monitor and track order status, inventory,
                       and sales analytics.</p>
                   </li>
                 </ul>
-
                 <ul class="project__techs items--flex">
                   <li>
                     <img class="tech__image" src="assets/images/skills/react.png" alt="react js">
@@ -377,10 +462,10 @@
                     <img class="tech__image" src="assets/images/skills/redux.png" alt="redux toolkit">
                   </li>
                   <li>
-                    <img class="tech__image" src="assets/images/headlessui.svg" alt="headlessui">
+                    <img class="tech__image" src="assets/images/techs/headlessui.svg" alt="headlessui">
                   </li>
                   <li>
-                    <img class="tech__image" src="assets/images/chartjs.svg" alt="chartjs">
+                    <img class="tech__image" src="assets/images/techs/chartjs.svg" alt="chartjs">
                   </li>
                 </ul>
               </div>
@@ -393,28 +478,52 @@
             <div class="project__image position--relative">
               <img src="assets/images/projects/bags-shop.png" alt="bags shop project">
             </div>
-            <div class="project__description items--flex--column items--end">
+            <div class="project__description flex--column items--end">
               <div class="items--flex items--center">
                 <div class="project__heading">
                   <h3>Bags Shop Website</h3>
                   <h4>E-commerce</h4>
                 </div>
                 <a class="project__link position--relative" target="_blank"
-                  href="https://github.com/Dalia-Alawneh/bag-shop"><img src="assets/images/link-ico.png" alt="link"></a>
+                  href="https://github.com/Dalia-Alawneh/bag-shop"><img src="assets/images/ui/link-ico.png"
+                    alt="bags shop link"></a>
               </div>
               <div class="project__card  rounded--8 card--blur">
                 <p>E-commerce application built using JSON server</p>
-                <ul class="items--flex--column list--gap">
+                <ul class="flex--column list--gap">
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">Add To cart and wishlist.</p>
                   </li>
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">User Login and Registration Simulation using localStorage.</p>
                   </li>
                 </ul>
-
                 <ul class="project__techs items--flex">
                   <li>
                     <img class="tech__image" src="assets/images/skills/html5.png" alt="html5">
@@ -436,33 +545,68 @@
             </div>
           </div>
           <div class="project items--flex">
-            <div class="project__description items--flex--column items--start">
+            <div class="project__description flex--column items--start">
               <div class="items--flex items--center">
                 <div class="project__heading">
                   <h3>Zoom clone App</h3>
                   <h4>Online Meetings</h4>
                 </div>
                 <a class="project__link position--relative" target="_blank"
-                  href="https://github.com/Dalia-Alawneh/zoom-clone"><img src="assets/images/link-ico.png"
-                    alt="link"></a>
+                  href="https://github.com/Dalia-Alawneh/zoom-clone"><img src="assets/images/ui/link-ico.png"
+                    alt="zoom-clone link"></a>
               </div>
               <div class="project__card  rounded--8 card--blur">
                 <p>Flutter cloning Zoom App</p>
-                <ul class="items--flex--column list--gap">
+                <ul class="flex--column list--gap">
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">Flutter-based Zoom clone with a custom UI featuring 22+ screens.</p>
                   </li>
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">Integrated camera access.</p>
                   </li>
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">Firebase for real-time data management.</p>
                   </li>
                 </ul>
-
                 <ul class="project__techs items--flex">
                   <li>
                     <img class="tech__image" src="assets/images/skills/flutter.png" alt="flutter">
@@ -487,7 +631,7 @@
             <div class="project__image position--relative smg">
               <img src="assets/images/projects/smg.png" width="100%" alt="Smart Medical Guidance">
             </div>
-            <div class="project__description items--flex--column items--end">
+            <div class="project__description flex--column items--end">
               <div class="items--flex items--center">
                 <div class="project__heading">
                   <h3>SMG Flutter App</h3>
@@ -495,25 +639,60 @@
                 </div>
                 <a class="project__link position--relative" target="_blank"
                   href="https://drive.google.com/file/d/1nxngMno0cFxbbqFAkvFetUhFeW3MoqTI/view?usp=sharing"><img
-                    src="assets/images/link-ico.png" alt="link"></a>
+                    src="assets/images/ui/link-ico.png" alt="SMG app video link"></a>
               </div>
               <div class="project__card  rounded--8 card--blur">
                 <p>Smart Medical Guidance</p>
-                <ul class="items--flex--column list--gap">
+                <ul class="flex--column list--gap">
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">Voice and natural language understanding with Arabic Medical support.</p>
                   </li>
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">GPS Shortest Path.</p>
                   </li>
                   <li class="items--flex list--gap">
-                    <img src="assets/icons/check-gradient.svg" alt="check icon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.304 8L9.20269 12L7.15202 10M10.228 19C5.13153 19 1 14.9706 1 10C1 5.02944 5.13153 1 10.228 1C15.3245 1 19.456 5.02944 19.456 10C19.456 14.9706 15.3245 19 10.228 19Z"
+                        stroke="url(#paint0_linear_58_183)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_58_183" x1="10.228" y1="1" x2="10.228" y2="19"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFF2F2" />
+                          <stop offset="1" stop-color="#E9B0FF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                     <p class="list__text">Clinic Prediction and booking system.</p>
                   </li>
                 </ul>
-
                 <ul class="project__techs items--flex">
                   <li>
                     <img class="tech__image" src="assets/images/skills/flutter.png" alt="flutter">
@@ -534,33 +713,31 @@
         </div>
       </div>
     </section>
-
     <section id="contact" class="contact position--relative section--padding gradient-bg">
       <div class="stars"></div>
       <div class="twinkling"></div>
       <div class="clouds"></div>
       <div class="container">
         <div class="contact__wrapper position--relative items--flex">
-          <form class="contact__form position--relative items--flex--column">
-            <div class="input__wrapper items--flex--column">
+          <form class="contact__form position--relative flex--column">
+            <div class="input__wrapper flex--column">
               <label for="name">Name</label>
               <input class="input rounded--8" required type="text" name="name" id="name">
             </div>
-            <div class="input__wrapper items--flex--column">
+            <div class="input__wrapper flex--column">
               <label for="email">Email</label>
               <input class="input rounded--8" required type="email" name="email" id="email">
             </div>
-            <div class="input__wrapper items--flex--column">
+            <div class="input__wrapper flex--column">
               <label for="message">Message</label>
               <textarea class="input rounded--8" required name="message" id="message"></textarea>
             </div>
             <div class="items--flex items--center">
-              <button type="submit" class="btn form__btn text--primary rounded--full">
+              <button type="submit" id="form__btn" class="btn form__btn text--primary rounded--full">
                 <span class="text__top">Send Message</span></button>
             </div>
           </form>
-
-          <iframe
+          <iframe title="Map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26943.28582397046!2d35.36856495!3d32.4215493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2s!4v1740783792347!5m2!1sar!2s"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -568,8 +745,23 @@
       </div>
     </section>
   </main>
+  <footer class="footer flex--column items--center">
+    <p>Made with 🤍 by <span class="text--main">Dalia Alawneh</span></p>
+    <p class="copywrite">&copy; <span id="year"></span> All rights reserved.</p>
+  </footer>
+  <div class="glow"></div>
+  <button class="to-top">
+    <img src="assets/icons/arrow-top.svg" width="100" alt="arrow top icon">
+  </button>
 
-  <script src="js/index.js"></script>
+  <script src="src/js/events.js"></script>
+  <script src="src/js/index.js"></script>
+  <script src="src/js/toast.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script src="src/js/carousel.js"></script>
+  <script src="src/js/emailjs.js"></script>
+  <script src="src/js/animation.js"></script>
 </body>
 
 </html>
